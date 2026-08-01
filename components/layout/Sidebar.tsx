@@ -6,12 +6,25 @@ export default function Sidebar() {
       </h1>
 
       <ul className="space-y-3">
-        <li>🏠 Dashboard</li>
-        <li>💰 Sales</li>
-        <li>📦 Inventory</li>
-        <li>👥 Employee</li>
-        <li>📈 Reports</li>
-        <li>⚙️ Settings</li>
+    <li>
+  <Link href="/sales">💰 Sales</Link>
+</li>
+
+<li>
+  <Link href="/inventory">📦 Inventory</Link>
+</li>
+
+<li>
+  <Link href="/employee">👥 Employee</Link>
+</li>
+
+<li>
+  <Link href="/reports">📈 Reports</Link>
+</li>
+
+<li>
+  <Link href="/settings">⚙️ Settings</Link>
+</li>
       </ul>
     </div>
   )

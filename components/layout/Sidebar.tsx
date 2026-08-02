@@ -7,19 +7,19 @@ export default function Sidebar() {
       <ul className="space-y-3">
     <li>
   <Link href="/sales">💰 Sales</Link>
-</li>
-<li>
+    </li>
+        <li>
   <Link href="/inventory">📦 Inventory</Link>
-</li>
-<li>
+        </li>
+        <li>
   <Link href="/employee">👥 Employee</Link>
-</li>
-<li>
+        </li>
+        <li>
   <Link href="/reports">📈 Reports</Link>
-</li>
-<li>
+        </li>
+        <li>
   <Link href="/settings">⚙️ Settings</Link>
-</li>
+        </li>
       </ul>
     </div>
   )

@@ -1,24 +1,33 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import KpiCard from "@/components/dashboard/KpiCard";
 
-interface KpiCardProps {
-  title: string;
-  value: string;
-}
-
-export default function KpiCard({ title, value }: KpiCardProps) {
+export default function DashboardPage() {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-sm text-gray-500">
-          {title}
-        </CardTitle>
-      </CardHeader>
+    <div className="space-y-6">
+      <h1 className="text-3xl font-bold">
+        Dashboard
+      </h1>
 
-      <CardContent>
-        <p className="text-2xl font-bold">
-          {value}
-        </p>
-      </CardContent>
-    </Card>
+      <div className="grid grid-cols-4 gap-4">
+        <KpiCard
+          title="Sales Hari Ini"
+          value="Rp12.500.000"
+        />
+
+        <KpiCard
+          title="Target Bulan"
+          value="Rp365.000.000"
+        />
+
+        <KpiCard
+          title="Achievement"
+          value="86%"
+        />
+
+        <KpiCard
+          title="Traffic"
+          value="124"
+        />
+      </div>
+    </div>
   );
 }
